@@ -14,7 +14,7 @@ const test = base.extend<TestFixtures>({
         console.log('Starting long operation');
         await sleep(20000);
         console.log('Ending long operation');
-        use('done')
+        await use('done')
     }
 });
 
